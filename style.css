@@ -1,0 +1,200 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #333333;
+    line-height: 1.6;
+}
+
+
+
+   header {
+    background-image: url('rutadecenfocada.jpeg'); /* Poné acá el nombre exacto de tu foto */
+    background-size: cover;          /* Estira la foto para que cubra todo */
+    background-position: center;     /* Centra la foto */
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+
+ 
+/* TÍTULO MÁS GRANDE */
+header h1 {
+    font-size: 3em;                  /* Tamaño grande (puedes subirlo a 3.5em si quieres más) */
+    margin: 10px 0;                  /* Espacio arriba y abajo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra para que resalte bien */
+}
+
+/* SUBTÍTULO MÁS GRANDE */
+header p {
+    font-size: 1.3em;                /* Tamaño más legible y grande */
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Sombra para que se lea perfecto */
+}
+
+/* LOGO CENTRADO Y CON TAMAÑO IDEAL */
+.logo-container {
+    text-align: center;              /* Centra el logo */
+    margin-bottom: 15px;             /* Espacio entre el logo y el título */
+}
+
+.logo-container img {
+    max-width: 110px;                /* Tamaño del logo (puedes cambiarlo si lo quieres más grande o chico) */
+    height: auto;                    /* No deforma la imagen */
+    display: inline-block;
+}
+
+.info-bar {
+    background-color: #e8f5e9;
+    border-bottom: 2px solid #c8e6c9;
+    padding: 15px;
+    text-align: center;
+}
+
+.info-bar p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+
+
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Bordes redondeados para que combine con tus cajas */
+}
+
+/
+.imagen-seccion {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.imagen-banner {
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+    padding: 0 20px;
+}
+
+
+
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.action-section {
+    text-align: center;
+}
+
+.btn-action {
+    background-color: #f57c00; /* Naranja vial / alerta */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-action:hover {
+    background-color: #e65100;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+    margin-top: 30px;
+}
+
+section {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* La línea divisoria verde debajo de cada título de sección */
+h2 {
+    color: #1b5e20;
+    margin-top: 0;
+    font-size: 1.4em;
+    border-bottom: 2px solid #81c784; /* ¡Esta es la línea que le da el toque prolijo! */
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #1b5e20;
+    margin-top: 0;
+    font-size: 1.4em;
+    border-bottom: 2px solid #81c784; /* ¡Esta es la línea que le da el toque prolijo! */
+    padding-bottom: 5px;
+
+}
+
+h4 {
+    color: #1b5e20;
+    margin-top: 0;
+    font-size: 1.4em;
+    border-bottom: 2px solid #81c784; /* ¡Esta es la línea que le da el toque prolijo! */
+    padding-bottom: 5px;
+
+}
+
+/* ESTILOS PARA LAS IMÁGENES DENTRO DE LAS SECCIONES */
+section img {
+    max-width: 70%;     /* Hace que la imagen nunca se pase del ancho de la caja */
+    height: auto;        /* Mantiene la proporción para que no se deforme */
+    display: block;      
+    margin: 5px auto;   /* La centra automáticamente y le da espacio arriba y abajo */
+    border-radius: 8px;  /* Opcional: le redondea un poquito las puntas para que quede más prolijo */
+}
+
+/* CONTENEDOR DE LAS DOS IMÁGENes LADO A LADO */
+.galeria-dos-columnas {
+    display: flex;             /* Pone las imágenes en fila (una al lado de la otra) */
+    gap: 20px;                 /* Espacio de separación entre las dos fotos */
+    justify-content: center;   /* Centra el bloque de imágenes en la página */
+    margin: 20px 0;            /* Espacio arriba y abajo */
+}
+
+/* TAMAÑO DE CADA IMAGEN DENTRO DE LA FILA */
+.galeria-dos-columnas img {
+    width: 60%;                /* Cada imagen ocupa casi la mitad del ancho disponible */
+    max-height: 300px;         /* Altura máxima para que no queden gigantes */
+    object-fit: cover;         /* Evita que la foto se deforme */
+    border-radius: 8px;        /* Bordes redondeados prolijos */
+}
+
+/* Para que en los celulares se pongan una abajo de otra automáticamente */
+@media (max-width: 600px) {
+    .galeria-dos-columnas {
+        flex-direction: column;
+    }
+    .galeria-dos-columnas img {
+        width: 100%;
+    }
+}
